@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>Basic JQuery</title>
+  <meta name="description" content="">
+  <meta name="author" content="Kedar Deshpande">
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <!-- CSS 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+  <script>
+
+    $(document).keydown(function(e){
+      if (e.keyCode == 73) { 
+        
+        document.getElementById('sound1').play();
+        $("#giphy").show();
+
+        return false;
+      }
+    });
+
+    $(document).keydown(function(e){
+      if (e.keyCode == 79) { 
+
+        $("#giphy").show();
+        document.getElementById('sound2').play();
+        
+        
+        return false;
+      }
+    });
+
+    $(document).keydown(function(e){
+      if (e.keyCode == 80) { 
+        document.getElementById('sound3').play();
+        return false;
+      }
+    });
+
+
+  </script>
+
+</head>
+
+<body bgcolor="#BBDEFB">
+
+<div class="container">
+  <br>
+  <img src="giphy.gif" id="giphy" width="100%" style="display:none"/ >
+
+  <audio id="sound1" controls style="display:none"/>
+      <source src="aud1.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="sound2" controls style="display:none"/>
+      <source src="aud2.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="sound3" controls style="display:none"/>
+      <source src="aud3.mp3" type="audio/mpeg">
+  </audio>
+</div>
+
+</body>
+</html>
