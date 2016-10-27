@@ -27,7 +27,7 @@
     $(document).keydown(function(e){
       if (e.keyCode == 37) { 
 
-        $("#giphy").show().delay(500).fadeOut();
+        $("#giphy1").show().delay(500).fadeOut();
         document.getElementById('sound2').play();
   
         return false;
@@ -37,7 +37,7 @@
     $(document).keydown(function(e){
       if (e.keyCode == 38) { 
 
-        $("#giphy").show().delay(500).fadeOut();
+        $("#giphy2").show().delay(500).fadeOut();
         document.getElementById('sound2').play();
   
         return false;
@@ -47,7 +47,7 @@
     $(document).keydown(function(e){
       if (e.keyCode == 39) { 
 
-        $("#giphy").show().delay(500).fadeOut();
+        $("#giphy3").show().delay(500).fadeOut();
         document.getElementById('sound2').play();
   
         return false;
@@ -57,7 +57,7 @@
     $(document).keydown(function(e){
       if (e.keyCode == 40) { 
 
-        $("#giphy").show().delay(500).fadeOut();
+        $("#giphy4").show().delay(500).fadeOut();
         document.getElementById('sound2').play();
   
         return false;
@@ -69,11 +69,15 @@
 
 </head>
 
-<body bgcolor="#BBDEFB">
+<!--<body bgcolor="#BBDEFB">-->
+<body bgcolor="#000">
 
 <div class="container">
   <br>
-  <img src="giphy.gif" id="giphy" width="100%" style="display:none"/ >
+  <img src="giphy1.gif" id="giphy1" width="100%" style="display:none"/ >
+  <img src="giphy2.gif" id="giphy2" width="100%" style="display:none"/ >
+  <img src="giphy3.gif" id="giphy3" width="100%" style="display:none"/ >
+  <img src="giphy4.gif" id="giphy4" width="100%" style="display:none"/ >
 
   <audio id="sound1" controls style="display:none"/>
       <source src="aud1.mp3" type="audio/mpeg">
