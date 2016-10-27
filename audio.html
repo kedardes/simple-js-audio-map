@@ -25,32 +25,44 @@
   <script>
 
     $(document).keydown(function(e){
-      if (e.keyCode == 73) { 
-        
-        document.getElementById('sound1').play();
-        $("#giphy").show();
+      if (e.keyCode == 37) { 
 
-        return false;
-      }
-    });
-
-    $(document).keydown(function(e){
-      if (e.keyCode == 79) { 
-
-        $("#giphy").show();
+        $("#giphy").show().delay(500).fadeOut();
         document.getElementById('sound2').play();
-        
-        
+  
         return false;
       }
     });
 
     $(document).keydown(function(e){
-      if (e.keyCode == 80) { 
-        document.getElementById('sound3').play();
+      if (e.keyCode == 38) { 
+
+        $("#giphy").show().delay(500).fadeOut();
+        document.getElementById('sound2').play();
+  
         return false;
       }
     });
+
+    $(document).keydown(function(e){
+      if (e.keyCode == 39) { 
+
+        $("#giphy").show().delay(500).fadeOut();
+        document.getElementById('sound2').play();
+  
+        return false;
+      }
+    });
+
+    $(document).keydown(function(e){
+      if (e.keyCode == 40) { 
+
+        $("#giphy").show().delay(500).fadeOut();
+        document.getElementById('sound2').play();
+  
+        return false;
+      }
+    });    
 
 
   </script>
